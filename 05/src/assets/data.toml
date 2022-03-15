@@ -1,0 +1,33 @@
+# 这是TOML文档示例.
+
+title = "TOML Example"
+
+[owner]
+name = "Lance Uppercut"
+dob = 1979-05-27T07:32:00-08:00
+
+[database]
+server = "192.168.1.1"
+ports = [ 8001, 8001, 8002 ]
+connection_max = 5000
+enabled = true
+
+[servers]
+
+# 你可以按你的意愿缩进.TOML并不关心你是用Tab还是空格.
+[servers.alpha]
+ip = "10.0.0.1"
+dc = "eqdc10"
+
+[servers.beta]
+ip = "10.0.0.2"
+dc = "eqdc10"
+
+[clients]
+data = [ ["gamma", "delta"], [1, 2] ]
+
+# 数组里可以换行
+hosts = [
+"alpha",
+"omega"
+]

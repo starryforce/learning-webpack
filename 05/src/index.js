@@ -7,6 +7,9 @@ import "./style.css";
 import "./style.less";
 import Data from "./assets/data.xml";
 import Notes from "./assets/data.csv";
+import toml from "./assets/data.toml";
+import yaml from "./assets/data.yaml";
+import json5 from "./assets/data.json5";
 
 helloWorld();
 
@@ -40,3 +43,9 @@ document.body.appendChild(span);
 
 console.log("Data", Data);
 console.log("Notes", Notes);
+console.log("toml", toml.title);
+console.log("toml", toml.owner.name);
+console.log("yaml", yaml.apiVersion);
+console.log("yaml", yaml.metadata.name);
+console.log("json5", json5.description);
+console.log("json5", json5.devDependencies.gulp);
